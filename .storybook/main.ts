@@ -15,6 +15,7 @@ const config: StorybookConfig = {
       ...(config.resolve.alias as Record<string, string>),
       'react-native': 'react-native-web',
     };
+    config.resolve.dedupe = ['react', 'react-dom'];
     return config;
   },
 };
