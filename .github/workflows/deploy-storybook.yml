@@ -1,4 +1,4 @@
-name: Deploy Storybook to GitHub Pages
+name: Deploy Task App to GitHub Pages
 
 on:
   push:
@@ -28,12 +28,12 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build Storybook
-        run: npm run build-storybook
+      - name: Export Expo web build
+        run: npx expo export --platform web
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: storybook-static
+          path: dist
 
   deploy:
     needs: build
