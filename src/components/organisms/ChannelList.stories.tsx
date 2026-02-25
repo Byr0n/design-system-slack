@@ -1,5 +1,5 @@
 import { action } from 'storybook/actions';
-import type { Meta, StoryObj } from '@storybook/react-native';
+import type { Meta, StoryObj } from '@storybook/react';
 import { ChannelList } from './ChannelList';
 import type { Channel } from './ChannelList';
 

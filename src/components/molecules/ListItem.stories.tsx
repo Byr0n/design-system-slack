@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-native';
+import type { Meta, StoryObj } from '@storybook/react';
 import { ListItem } from './ListItem';
 
 const meta: Meta<typeof ListItem> = {

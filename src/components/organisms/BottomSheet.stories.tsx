@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import { action } from 'storybook/actions';
-import type { Meta, StoryObj } from '@storybook/react-native';
+import type { Meta, StoryObj } from '@storybook/react';
 import { BottomSheet } from './BottomSheet';
 import { Button } from '../atoms/Button';
 
